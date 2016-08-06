@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        style="@style/BlackTranslucent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></RelativeLayout>
+    <ListView
+        android:id="@+id/mytotalmp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/playmusicLinearlayout"
+        style="@style/BackColor"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/musicnow_pic"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/musicnow_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/musicnow_pic"
+            android:text="我的标题"
+            android:textColor="#0c0d0b"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/musicnow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musicnow_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/musicnow_pic"
+            android:text="我的时间"
+            android:textColor="#0c0d0b"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/music_playpre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_play_before" />
+
+            <Button
+                android:id="@+id/music_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_play" />
+
+            <Button
+                android:id="@+id/music_playnext"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_play_next" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

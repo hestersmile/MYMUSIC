@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_margin="10dp"
+    android:maxHeight="65dp">
+
+    <ImageView
+        android:id="@+id/music_pic"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/music_pic"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/music_pic"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="我的标题"
+            android:textColor="#0c0d0b"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/music_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="我的作者"
+            android:textColor="#0c0d0b"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/music_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/music_pic"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="14dp"
+        android:text="我的时长"
+        android:textColor="#0c0d0b"
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studyandroid.hestersmile.mymusic.myactivity.PlayMusicActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/playViewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/play_bar"
+        style="@style/BackColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/mybacktitle"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/playing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/mybacktitle"
+            android:text="歌曲名"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/playing_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/playing_title"
+            android:layout_below="@+id/playing_title"
+            android:layout_margin="5dp"
+            android:text="作者"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/nav_share"
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_share" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/seeklayout"
+        style="@style/BackColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <SeekBar
+            android:id="@+id/play_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:id="@+id/playing_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/playing_totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_seekbar"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/playsort"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_play_style_reycle" />
+
+            <Button
+                android:id="@+id/music_prebtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_play_before" />
+
+            <Button
+                android:id="@+id/music_playbtn"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_play" />
+
+            <Button
+                android:id="@+id/music_nextbtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_play_next" />
+
+            <Button
+                android:id="@+id/mysic_playinglistbtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_playlist" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

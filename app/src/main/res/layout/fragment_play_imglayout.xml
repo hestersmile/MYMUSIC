@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackResource"
+    android:id="@+id/imglayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/BlackTranslucent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fm_play_disc" />
+
+        <com.studyandroid.hestersmile.mymusic.util.CircleImageView
+            android:id="@+id/playing_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+        <com.studyandroid.hestersmile.mymusic.util.CircleImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_blank" />
+    </RelativeLayout>
+</RelativeLayout>

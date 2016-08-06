@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_background"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="设置背景" />
+        <item
+            android:id="@+id/nav_audioedit"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="搜索" />
+    </group>
+
+    <item android:title="管理">
+        <menu>
+            <item
+                android:id="@+id/nav_manger"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="清除歌词缓存" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="关于" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="退出" />
+
+
+        </menu>
+    </item>
+
+</menu>
